@@ -1,0 +1,33 @@
+{
+  "name": "welcome",
+  "messages": [
+    {
+      "delay": 500,
+      "text": "Welcome to the workspace! :wave:"
+    },
+    {
+      "delay": 2000,
+      "text": "Here are a few things to get you started:",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "Here are a few things to get you started:"
+          }
+        },
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "• *Browse channels* — explore what's happening across the company\n• *Update your profile* — add a photo and fill in your role\n• *Say hello* in <#general>"
+          }
+        }
+      ]
+    },
+    {
+      "delay": 2500,
+      "text": "Need help? Just ask me anything. I'm always here. :slightly_smiling_face:"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"node src/index.js\")",
+      "Bash(PATH=\"/opt/homebrew/bin:$PATH\" npm start *)",
+      "Bash(PATH=/opt/homebrew/bin:__TRACKED_VAR__ npm start)",
+      "Skill(claude-api)",
+      "Bash(PATH=\"/opt/homebrew/bin:$PATH\" npm install *)",
+      "Bash(jobs)",
+      "Bash(PATH=/opt/homebrew/bin:__TRACKED_VAR__ node src/index.js)",
+      "Bash(kill %1)",
+      "Bash(PATH=\"/opt/homebrew/bin:$PATH\" node *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

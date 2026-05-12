@@ -1,0 +1,60 @@
+{
+  "display_information": {
+    "name": "Slackbot AI",
+    "description": "Plays back scripted conversations that look like they're from Slackbot",
+    "background_color": "#611f69"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "Slackbot AI",
+      "always_online": true
+    },
+    "app_home": {
+      "home_tab_enabled": true,
+      "messages_tab_enabled": true,
+      "messages_tab_read_only_enabled": false
+    },
+    "slash_commands": [
+      {
+        "command": "/scriptbot",
+        "description": "Play back a scripted conversation",
+        "usage_hint": "run <script-name>",
+        "should_escape": false
+      }
+    ]
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "chat:write",
+        "chat:write.customize",
+        "commands",
+        "channels:history",
+        "groups:history",
+        "im:history",
+        "mpim:history"
+      ],
+      "user": [
+        "chat:write",
+        "im:history"
+      ]
+    }
+  },
+  "settings": {
+    "socket_mode_enabled": true,
+    "token_rotation_enabled": false,
+    "org_deploy_enabled": false,
+    "interactivity": {
+      "is_enabled": true
+    },
+    "event_subscriptions": {
+      "bot_events": [
+        "app_home_opened",
+        "message.channels",
+        "message.groups",
+        "message.im",
+        "message.mpim"
+      ]
+    }
+  }
+}

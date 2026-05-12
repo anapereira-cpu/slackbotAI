@@ -1,0 +1,22 @@
+{
+  "name": "slack-scriptbot",
+  "version": "1.0.0",
+  "description": "Slack app that plays back scripted conversations as Slackbot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.2",
+    "@slack/bolt": "^3.22.0",
+    "@slack/web-api": "^7.8.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
